@@ -1,0 +1,188 @@
+/* כללי */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    direction: rtl;
+}
+
+h1 {
+    color: #e8f3f3;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: "Sacramento", cursive;
+}
+
+h2 {
+    color: #e8f3f3;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    line-height: 2;
+    color: #40514e;
+}
+
+hr {
+    border: dotted #829191 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e8f3f3;
+}
+
+/* מיכלים */
+.top-container {
+    background-color: #3a6351;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.bottom-container {
+    background-color: #3a6351;
+    padding: 50px 0 20px;
+}
+
+/* טקסטים */
+.intro {
+    width: 50%;
+    margin: auto;
+}
+
+.contact-message {
+    width: 50%;
+    margin: 40px auto 60px;
+}
+
+/* תמונות */
+.top-chess {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+    width: 150px;
+}
+
+.bottom-ninja {
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+    width: 150px;
+}
+
+#profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+/* כפתורים */
+.btn {
+    background: #3a6351;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #4a8770;
+}
+
+/* שורות של מיומנויות */
+.skill-row {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    text-align: right;
+    align-items: center;
+}
+
+.skill-content {
+    flex: 2;
+}
+
+.skill-img-right {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 30px;
+}
+
+.skill-img-left {
+    flex: 1;
+    max-width: 150px;
+    margin-left: 30px;
+}
+
+/* פוטר */
+.footer-link {
+    color: #e8f3f3;
+}
+
+.copyright {
+    color: #e8f3f3;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+/* רספונסיביות */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .intro, .contact-message {
+        width: 80%;
+    }
+    
+    .skill-row {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .skill-img-right, .skill-img-left {
+        margin: 20px 0;
+        order: -1;
+    }
+    
+    .top-chess, .bottom-ninja {
+        width: 100px;
+    }
+    
+    .top-chess {
+        right: 50px;
+    }
+    
+    .bottom-ninja {
+        left: 50px;
+    }
+}
